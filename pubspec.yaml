@@ -2,13 +2,18 @@ name: proxy_hub
 description: A sample command-line application.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
+publish_to: none
 
 environment:
   sdk: ^3.11.4
 
 # Add regular dependencies here.
 dependencies:
+  deskaone_sdk:
+    git: https://github.com/DesKaOne/deskaone-sdk-dart.git
   path: ^1.9.0
+  postgres: ^3.5.11
+  sqlite3: ^3.3.2
 
 dev_dependencies:
   lints: ^6.0.0
